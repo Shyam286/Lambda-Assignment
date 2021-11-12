@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+import java.util.function.UnaryOperator;
+
+public class LambdaAssign_6 {
+
+	public static void main(String[] args) {
+		ArrayList<String> al=new ArrayList<>();
+		 al.add("Shyam");
+			al.add("Pratik");
+			al.add("Saurav");
+			al.add("Sagar");
+		System.out.println("LowerCase: "+al);
+		al.replaceAll(e->e.toUpperCase());
+		System.out.println("Uppercase : "+al);
+	}
+
+}

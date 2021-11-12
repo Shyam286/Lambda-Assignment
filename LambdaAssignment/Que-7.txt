@@ -1,0 +1,25 @@
+import java.util.HashMap;
+import java.util.Map.Entry;
+
+public class KeyValueIntoString
+{
+	public static void main(String[] args)
+	{
+		HashMap<Integer,String> hm=new HashMap<>();
+		StringBuilder sb=new StringBuilder();
+		hm.put(1, "abc");
+		hm.put(2, "degf");
+		hm.put(3, "xyz");
+		hm.put(4, "bcd");
+		System.out.println("Elements :");
+		System.out.println(hs);		
+		System.out.println("After converting into a string:");
+		for (Entry<Integer, String> m:hm.entrySet()) 
+		{
+			sb.append(m); 
+		}
+		System.out.println(sb);
+		
+	}
+
+}

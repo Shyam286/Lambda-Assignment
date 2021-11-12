@@ -1,0 +1,22 @@
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
+
+public class LambdaAssign_3{
+	public static void main(String[] args) {
+		Consumer<Integer> c = i -> System.out.println(i);
+		
+		Predicate<Integer> pr = i ->(i>10);
+		
+		Supplier<Double> su = ()->Math.random();
+		Function<Integer,Double> fun=(a)->a/2.0;
+		
+		System.out.println("Consumer");
+		c.accept(30);
+		System.out.println(pr.test(30));
+		System.out.println("Supplier:"+ su.get());
+		System.out.println("Supply:"+fun.apply(25));
+	}
+	
+}

@@ -1,0 +1,21 @@
+import java.util.*;
+public class LambdaAssign_4{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      
+		ArrayList<String> al = new ArrayList<>();
+		al.add("Shyam");
+		al.add("Pratik");
+		al.add("Saurav");
+		al.add("Sagar");		
+		
+		System.out.println("Before : "+al);
+		al.removeIf(name->(name.length()%2!=0));
+		
+		System.out.println("After removing : "+al);
+		
+		
+	}
+
+}

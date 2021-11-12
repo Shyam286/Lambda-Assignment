@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class LambdaAssign_5 {
+  public static void main(String[] args) {
+	  List<String> al = new ArrayList<>();
+	    al.add("Shyam");
+		al.add("Pratik");
+		al.add("Saurav");
+		al.add("Sagar");
+	  
+	  StringBuilder res = new StringBuilder();
+	  al.forEach(s->res.append(s.charAt(0)));
+	  System.out.println(res);
+  }
+  
+}
